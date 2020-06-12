@@ -1,0 +1,27 @@
+.node {
+    width: 30px;
+    height: 30px;
+    outline: 1px solid rgb(175, 216, 248);
+    display: inline-block;
+}
+
+.node-start {
+    background-image: url(../../assets/images/start-point.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.node-finish {
+    background-image: url(../../assets/images/finish-flag.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.node-wall {
+    background-image: url(../../assets/images/wall.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
