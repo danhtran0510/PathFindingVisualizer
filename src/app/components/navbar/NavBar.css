@@ -1,0 +1,75 @@
+nav {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-box .item .unvisited-node {
+    position: relative;
+}
+
+.info-box .item .unvisited-node::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(175, 216, 248);
+    background-color: white;
+}
+
+.info-box .item .visited-node {
+    position: relative;
+}
+
+.info-box .item .visited-node::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(175, 216, 248);
+    background-color: rgba(0, 190, 218, 0.75);
+}
+
+.info-box .item .shortest-path-node {
+    position: relative;
+}
+
+.info-box .item .shortest-path-node::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(175, 216, 248);
+    background-color: rgb(255, 254, 106);
+}
+
+.info-box .item .img-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.algorithm-info .info {
+    color: #34495e;
+    font-size: 20px;
+    font-weight: 500;
+}
