@@ -148,6 +148,7 @@ export default class PathFindingVisualizer extends Component {
     visualize = (algorithm) => {
         if (!this.state.isRunning) {
             this.toggleRunning();
+            this.onClickClearBoard();
             const {grid} = this.state;
             const startNode = grid[this.state.START_NODE_ROW][this.state.START_NODE_COLUMN];
             const finishNode = grid[this.state.FINISH_NODE_ROW][this.state.FINISH_NODE_COLUMN];
