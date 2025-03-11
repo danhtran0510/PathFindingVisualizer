@@ -9,7 +9,7 @@ import { dfs } from "../algorithms/dfs";
 
 export default class PathFindingVisualizer extends Component {
 
-    NUMBER_OF_ROW = 30;
+    NUMBER_OF_ROW = 25;
     NUMBER_OF_COLUMN = 60;
 
     constructor() {
@@ -19,9 +19,9 @@ export default class PathFindingVisualizer extends Component {
             mousePressed: false,
             currentElement: '',
             isRunning: false,
-            START_NODE_ROW: 15,
+            START_NODE_ROW: 10,
             START_NODE_COLUMN: 10,
-            FINISH_NODE_ROW: 15,
+            FINISH_NODE_ROW: 10,
             FINISH_NODE_COLUMN: 45,
             isStartNode: false,
             isFinishNode: false,
@@ -148,7 +148,6 @@ export default class PathFindingVisualizer extends Component {
     visualize = (algorithm) => {
         if (!this.state.isRunning) {
             this.toggleRunning();
-            this.onClickClearBoard();
             const {grid} = this.state;
             const startNode = grid[this.state.START_NODE_ROW][this.state.START_NODE_COLUMN];
             const finishNode = grid[this.state.FINISH_NODE_ROW][this.state.FINISH_NODE_COLUMN];

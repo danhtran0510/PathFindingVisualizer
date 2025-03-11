@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Navbar, Nav, DropdownButton, Dropdown } from 'react-bootstrap';
 import './NavBar.css';
+import StartNode from '../../assets/images/start-point.svg';
+import FinishNode from '../../assets/images/finish-flag.svg';
+import Wall from '../../assets/images/wall.svg';
 
 export default class NavBar extends Component {
 
@@ -65,7 +68,7 @@ export default class NavBar extends Component {
                                 <Dropdown.Item eventKey="normal">Normal</Dropdown.Item>
                                 <Dropdown.Item eventKey="fast">Fast</Dropdown.Item>
                             </DropdownButton> */}
-                            <div>
+                            <div className="navbar-buttons">
                                 <button className="btn btn-secondary ml-3" onClick={this.handleClearBoard} disabled={this.props.disableButton}>Clear Board</button>
                                 {buttonFind}
                             </div>
@@ -75,11 +78,11 @@ export default class NavBar extends Component {
                 <div className="container">
                     <div className="info-box">
                         <div className="item">
-                            <img className="img-icon" src={require('../../assets/images/start-point.svg')} alt=""/>
+                            <img className="img-icon" src={StartNode} alt=""/>
                             <span className="start-node">Start Node</span>
                         </div>
                         <div className="item">
-                            <img className="img-icon" src={require('../../assets/images/finish-flag.svg')} alt=""/>
+                            <img className="img-icon" src={FinishNode} alt=""/>
                             <span className="finish-node">Finish Node</span>
                         </div>
                         <div className="item">
@@ -92,7 +95,7 @@ export default class NavBar extends Component {
                             <span className="shortest-path-node">Shortest path Node</span>
                         </div>
                         <div className="item">
-                            <img className="img-icon" src={require('../../assets/images/wall.svg')} alt=""/>
+                            <img className="img-icon" src={Wall} alt=""/>
                             <span className="wall">Wall</span>
                         </div>
                     </div>
